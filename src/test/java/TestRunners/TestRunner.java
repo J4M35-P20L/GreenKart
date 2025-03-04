@@ -1,5 +1,7 @@
 package TestRunners;
 
+import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -7,13 +9,18 @@ import io.cucumber.testng.CucumberOptions;
 
 features = "src/test/java/Features",
 glue = "StepDefinitions",
-plugin = {  "pretty",
+plugin = { "pretty",
         "html:target/cucumber-reports.html",
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"},
-monochrome = true
-
-	)
+monochrome = true,
+tags = "@regression")
 public class TestRunner extends AbstractTestNGCucumberTests {
 
+	/*
+	 * @Override
+	 * 
+	 * @DataProvider(parallel=true) public Object[][] scenarios() { return
+	 * super.scenarios(); }
+	 */
 }

@@ -35,9 +35,8 @@ public class TopDealsPageObjects {
 	}
 	
 	public void search(String pname) {
-		switchWindow();
 		explicitWaitForElement(search);
-		driver.findElement(search).sendKeys(pname);;
+		driver.findElement(search).sendKeys(pname);
 	}
 	public String getproductName() {
 		return driver.findElement(productName).getText();

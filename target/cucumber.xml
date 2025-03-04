@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.024" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-27T14:06:19.097316600Z">
-<testcase classname="Greenkart Homepage" name="Verify the product in top deals page" time="11.781">
+<testsuite name="Cucumber" time="10.828" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-04T15:06:31.140631200Z">
+<testcase classname="Greenkart Homepage" name="Verify the checkout functionality" time="10.595">
 <system-out><![CDATA[
 Given User is in the GreenKart HomePage.....................................passed
-When User searches for the product "tom" in the homepage....................passed
-And User Searches for the product "tom" in the top deals page...............passed
-Then product should be available in the top deals page......................passed
+When User adds the 4 products "tom" to the cart.............................passed
+And User places order from the cart.........................................passed
+Then the order should be placed successfully................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
