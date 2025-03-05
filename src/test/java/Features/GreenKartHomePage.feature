@@ -13,7 +13,7 @@ Feature: Greenkart Homepage
 	| tom |
   
   @regression
-   Scenario Outline: Verify the checkout functionality
+   Scenario: Verify the checkout functionality
    Given User is in the GreenKart HomePage
    When User adds the 4 products "tom" to the cart
    And User places order from the cart

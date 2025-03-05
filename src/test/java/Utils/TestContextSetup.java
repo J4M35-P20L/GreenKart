@@ -7,7 +7,7 @@ import PageObjects.PageObjectManager;
 public class TestContextSetup {
 
 	public WebDriver driver;
-	public String homepageproduct;public String topdealsproductname;
+	public String homepageproduct;public String topdealsproductname;public String cartproduct;
 	public PageObjectManager PageObjectManager;
 	public TestBase testbase;
 	public GenericUtils genericutils;

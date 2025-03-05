@@ -45,6 +45,8 @@ public class GreenKartHomePage {
 	    gkhp.incrementitem(noofproducts);
 	    gkhp.clickAddToCart();
 	    System.out.println(noofproducts+" items are added to the cart");
+	    gkhp.clickOnCartIcon();
+	    gkhp.clickOnProceedToCheckout();
 	}
 	
 }

@@ -19,6 +19,8 @@ public class GreenKartHomePageObjects {
 	By productName = By.xpath("//h4[text() = 'Tomato - 1 Kg']");
 	By increment = By.xpath("//a[@class='increment']");
 	By addtocart = By.xpath("//button[text()='ADD TO CART']");
+	By carticon = By.xpath("//div[@class='cart-info']/following-sibling::a/img");
+	By proceedtochkout = By.xpath("//div[@class='action-block']/button");
 	
 	//actions
 	public void searchProduct(String pname) {
@@ -35,9 +37,18 @@ public class GreenKartHomePageObjects {
 	}
 	
 	public void clickAddToCart() {
+		explicitWaitForElement(addtocart);
 		driver.findElement(addtocart).click();
 	}
 	
+	public void clickOnCartIcon() {
+		driver.findElement(carticon).click();
+	}
+	
+	public void clickOnProceedToCheckout() {
+		explicitWaitForElement(proceedtochkout);
+		driver.findElement(proceedtochkout).click();
+	}
 	//wait for element
 	public void explicitWaitForElement(By element) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(7));

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.828" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-04T15:06:31.140631200Z">
-<testcase classname="Greenkart Homepage" name="Verify the checkout functionality" time="10.595">
+<testsuite name="Cucumber" time="15.087" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-05T11:33:25.085154400Z">
+<testcase classname="Greenkart Homepage" name="Verify the checkout functionality" time="14.846">
 <system-out><![CDATA[
 Given User is in the GreenKart HomePage.....................................passed
 When User adds the 4 products "tom" to the cart.............................passed
