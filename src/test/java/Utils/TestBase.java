@@ -50,9 +50,7 @@ public class TestBase {
 			else {
 				System.out.println("No browser selected or properties file is missing");
 			}
-			
-			
-			
+							
 			driver.get(qaurl);
 		}
 		
